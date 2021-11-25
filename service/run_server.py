@@ -77,8 +77,8 @@ def get_app() -> web.Application:
             app,
             swagger_url="/doc",
             definitions=get_definitions(any_dataclass_module=project),
-            title="Your Lovely Service Documentation.",
-            description="Your Lovely Service Documentation.",
+            title="Lovely Service Documentation.",
+            description="Lovely Service Documentation.",
             api_version="1.0.0",
             ui_version=3,
         )

@@ -1,4 +1,4 @@
-# Your Lovely Service
+# Lovely Service
 
 ## Environment Variables
 
