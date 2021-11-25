@@ -12,5 +12,5 @@ project = sa.Table(
     sa.Column("id", UUID(as_uuid=True), primary_key=True, default=uuid.uuid4),
     sa.Column("name", sa.TEXT),
     sa.Column("created", sa.TIMESTAMP, nullable=False, default=datetime.utcnow),
-    sa.Column("updated", sa.TIMESTAMP, nullable=True),
+    sa.Column("updated", sa.TIMESTAMP, nullable=True, onupdate=datetime.utcnow),
 )
