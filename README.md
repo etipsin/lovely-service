@@ -6,8 +6,8 @@
 SERVICE_HOST
 SERVICE_PORT
 
-SERVICE_ELK_ENABLE: Включить логирование в Logstash. "TRUE" или "FALSE".
-SERVICE_SWAGGER_ENABLE: Включить Swagger документацию по пути "/doc". "TRUE" или "FALSE".
+SERVICE_ELK_ENABLE
+SERVICE_SWAGGER_ENABLE
 
 # ELK
 SERVICE_ELK_HOST
