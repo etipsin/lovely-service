@@ -1,0 +1,22 @@
+version: "3"
+services:
+  service:
+    build:
+      context: .
+    image: service:latest
+    environment:
+      SERVICE_PORT: "8080"
+      SERVICE_POSTGRES_DSN: "postgres://user:password@postgres:5432/test"
+      SERVICE_SENTRY_ENABLE: "FALSE"
+      SERVICE_ELK_ENABLE: "FALSE"
+    ports:
+      - 8080:8080
+
+  postgres:
+    image: library/postgres:9.5-alpine
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: test
+    ports:
+      - 5432:5432
